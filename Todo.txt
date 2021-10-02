@@ -1,0 +1,15 @@
+RIGHT NOW;
+- finish Confirm Email front
+- finish forgot password front
+- finish reset password front
+- connect all and get ready to deploy
+
+FEATURES TO PREPARE;
+ - Add pages and navigation
+ - Add remember me button with functionallity
+ - Add forgot password page with mail use
+ - Add random code verification through mail / SMS to login
+ - Add new login notification mail / SMS with IP Address and Adress of the user
+ - Add interface to Nexmo API for SMS usage
+
+BUGS TO FIX;

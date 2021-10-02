@@ -1,0 +1,42 @@
+{
+    "name": "auth",
+    "version": "1.0.0",
+    "description": "Authentication with mailing",
+    "main": "app.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "server-install": "npm install --prefix server",
+        "install": "npm run client-install & npm run server-install",
+        "start": "npm run start --prefix server",
+        "server": "npm run dev --prefix server",
+        "client": "npm run start --prefix client",
+        "client:build": "npm run build --prefix client",
+        "data:import": "node server/seeder",
+        "data:destroy": "node server/seeder -d",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "prettier": "prettier --write ."
+    },
+    "author": "Katriel Tsepelevish <katriel.tsepelevish@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^6.2.1",
+        "prettier": "^2.4.1"
+    },
+    "dependencies": {
+        "module-alias": "^2.2.2",
+        "react-scripts": "^4.0.3"
+    },
+    "_moduleAliases": {
+        "@root": ".",
+        "@controllers": "./server/src/api/controllers",
+        "@helpers": "./server/src/api/helpers",
+        "@middlewares": "./server/src/api/middlewares",
+        "@models": "./server/src/api/models",
+        "@routes": "./server/src/api/routes",
+        "@seeders": "./server/src/api/seeders",
+        "@services": "./server/src/api/services",
+        "@validations": "./server/src/api/validations",
+        "@utils": "./server/src/api/utils",
+        "@config": "./server/src/config"
+    }
+}

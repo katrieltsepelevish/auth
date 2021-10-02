@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Confirm Email</title>
+    </head>
+    <style>
+        body {
+            color: #000;
+            font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    </style>
+    <body>
+        <p>Hey <strong> <%= name %></strong></p>
+        <p>
+            An email confirmation was requested for this email address
+            (<%=emailAddress %>). Click the link below to confirm your email:
+        </p>
+        <p><a href="<%= confirmLink %>">Confirm Authentication</a></p>
+    </body>
+</html>
